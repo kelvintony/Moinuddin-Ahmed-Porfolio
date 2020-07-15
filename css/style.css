@@ -28,9 +28,15 @@ body {
   background-color: #f2f2fc;
   min-height: 100vh;
   display: block;
+  padding: 0 30px;
 }
 .main-content {
   padding-left: 270px;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
 }
 /* Aside */
 .aside {
@@ -134,6 +140,7 @@ body {
   border-bottom: 1px solid #ffd166;
   -webkit-transition: all o.3s ease;
   transition: all o.3s ease;
+  text-transform: capitalize;
 }
 .aside .nav li a:not(.active):hover {
   padding-left: 5px;
@@ -147,3 +154,16 @@ body {
 }
 
 /* Home */
+.home {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .intro {
+  text-align: center;
+}
+.home .intro img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
