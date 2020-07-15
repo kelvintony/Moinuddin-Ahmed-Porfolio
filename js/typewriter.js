@@ -4,6 +4,7 @@ const texts = [
   "I Love Design.",
   "I make 2D Vector Art.",
   "I am Tech Enthusiast.",
+  "I Love Learning New Skills.",
 ];
 let count = 0;
 let index = 0;
