@@ -38,6 +38,10 @@ body {
   width: 100%;
   margin: auto;
 }
+.shadow-dark {
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 /* Aside */
 .aside {
   width: 270px;
@@ -151,6 +155,7 @@ body {
 .aside .copyright-text {
   font-size: 13px;
   color: #7d7d7d;
+  margin-top: 200px;
 }
 
 /* Home */
@@ -166,4 +171,14 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  display: inline-block;
+  border: 10px solid #fdf9ff;
+}
+
+.home .intro h1 {
+  font-size: 30px;
+  color: #302e4d;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  margin: 20px 0 7px;
 }
