@@ -8,7 +8,9 @@
   border-bottom: 4px solid #eb1e4e;
 }
 
+.portfolio .portfolio-item .portfolio-info .icon .fa,
 .about .about-content .about-text h3 span,
+.portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
 .aside .nav li a:hover,
 .aside .nav li a.active {
@@ -27,4 +29,8 @@
 .aside .nav-toggler span::after,
 .home .intro .social-links a {
   background-color: #eb1e4e;
+}
+
+.portfolio .portfolio-filter button.active {
+  border-color: #eb1e4e;
 }
