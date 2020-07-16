@@ -9,6 +9,7 @@
 }
 
 .about .about-content .about-text h3 span,
+.service .service-item .service-item-inner .icon .fa,
 .aside .nav li a:hover,
 .aside .nav li a.active {
   color: #eb1e4e;
@@ -16,6 +17,7 @@
 
 .btn,
 .about .about-content .skills .skill-item .progress .progress-in,
+.service .service-item .service-item-inner:hover .icon,
 .about .about-content .timeline .timeline-item::before,
 .about .about-content .timeline .circle-dot,
 .section-title h2::after,
