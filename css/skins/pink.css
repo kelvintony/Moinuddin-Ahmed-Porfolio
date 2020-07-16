@@ -13,7 +13,11 @@
 .aside .nav li a.active {
   color: #eb1e4e;
 }
+
 .btn,
+.about .about-content .skills .skill-item .progress .progress-in,
+.about .about-content .timeline .timeline-item::before,
+.about .about-content .timeline .circle-dot,
 .section-title h2::after,
 .section-title h2::before,
 .aside .nav-toggler span,

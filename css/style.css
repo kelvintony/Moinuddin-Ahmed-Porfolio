@@ -3,6 +3,7 @@
 /*Google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Electrolize|Lobster|Poppins|Teko:300,400&display=swap");
 /* General Style */
 
 body {
@@ -130,13 +131,19 @@ section .container {
 .aside .logo a {
   font-size: 40px;
   color: #302e4d;
-  font-family: "Rubik", sans-serif;
+  font-family: "Lobster";
   text-decoration: none;
   font-weight: 700;
   display: inline-block;
   position: relative;
   padding: 0 10px;
   line-height: 50px;
+}
+.aside .logo a:hover {
+  color: #4b0717;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
 }
 .aside .logo a::before {
   content: "";
@@ -212,8 +219,8 @@ section .container {
   line-height: 45px;
   display: block;
   border-bottom: 1px solid #ffd166;
-  -webkit-transition: all o.3s ease;
-  transition: all o.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-transform: capitalize;
 }
 .aside .nav li a:not(.active):hover {
@@ -224,8 +231,8 @@ section .container {
 }
 .aside .copyright-text {
   font-size: 13px;
-  color: #7d7d7d;
-  margin-top: 200px;
+  color: #636161;
+  margin-top: 250px;
 }
 
 /* Home */
@@ -351,20 +358,123 @@ section .container {
 }
 
 .about .about-content .skills .skill-item {
-  -ms-flex: 0 0 33%;
-  flex: 0 0 33%;
-  max-width: 33%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 .about .about-content .skills .skill-item h4 {
+  line-height: 40px;
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #302e4d;
+  text-transform: capitalize;
+  margin: 0;
 }
 .about .about-content .skills .skill-item .progress {
   background-color: #d4d4e3;
   height: 8px;
   border-radius: 4px;
-  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.about .about-content .skills .skill-item {
+  margin-bottom: 5px;
+}
+.about .about-content .skills .skill-item .progress .progress-in {
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 .about .about-content .skills .skill-item .skill-percent {
-  display: none;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  color: #eb1e4e;
+  top: -40px;
+  font-weight: 400;
 }
 
-/* #About Section */
+.about .about-content .education {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+.about .about-content .exp {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+.about .about-content h3.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #302e4d;
+}
+.about .about-content .timeline-box {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .timeline {
+  background-color: #fdf9ff;
+  padding: 30px 15px;
+  border: 1px solid #d4d4e3;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.about .about-content .timeline .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child {
+  padding-bottom: 0px;
+}
+.about .about-content .timeline .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+}
+.about .about-content .timeline .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  left: 0px;
+  border-radius: 50%;
+}
+.about .about-content .timeline .timeline-date {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  color: #504e70;
+}
+.about .about-content .timeline .timeline-date .fa {
+  margin-right: 15px;
+}
+.about .about-content .timeline .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #302e4d;
+}
+.about .about-content .timeline .timeline-text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #504e70;
+  margin: 0;
+}
