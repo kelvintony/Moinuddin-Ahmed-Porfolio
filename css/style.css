@@ -420,6 +420,8 @@ section .container {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about .about-content .timeline {
@@ -489,6 +491,8 @@ section .container {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .service .service-item .service-item-inner {
