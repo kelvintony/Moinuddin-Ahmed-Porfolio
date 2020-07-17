@@ -416,18 +416,18 @@
           <div class="row">
             <div class="portfolio-filter padd-15">
               <h3>Below you will find some of my recent work</h3>
-              <button type="button" class="active" data-filter=" all">
+              <button type="button" class="active" data-filter="all">
                 All
               </button>
-              <button type="button" data-filter=" unity-games">
+              <button type="button" data-filter="unity-games">
                 Unity Games
               </button>
-              <button type="button" data-filter=" Artwork">
+              <button type="button" data-filter="Artwork">
                 Artwork
               </button>
             </div>
           </div>
-          <div class="row ">
+          <div class="row">
             <!--portfolio-item-->
             <div class="portfolio-item padd-15" data-category="unity-games">
               <div class="portfolio-item-inner shadow-dark">
@@ -491,7 +491,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/character1.jpg" alt="portfolio" />
@@ -506,7 +506,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/character2.jpg" alt="portfolio" />
@@ -521,7 +521,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/character3.jpg" alt="portfolio" />
@@ -536,7 +536,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/character4.jpg" alt="portfolio" />
@@ -551,7 +551,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/bg1.jpg" alt="portfolio" />
@@ -566,7 +566,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/game asset 1.jpg" alt="portfolio" />
@@ -581,7 +581,7 @@
             </div>
             <!--portfolio-item end-->
             <!--portfolio-item-->
-            <div class="portfolio-item padd-15" data-category="vector-art">
+            <div class="portfolio-item padd-15" data-category="Artwork">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-image">
                   <img src="images/portfolio/game asset 2.jpg" alt="portfolio" />
@@ -606,18 +606,22 @@
 
   <!--main container-->
   <!--Lightbox-->
-  <div class="lightbox ">
+  <div class="lightbox">
     <div class="lightbox-content">
       <div class="lightbox-close">&times;</div>
-      <img src="images/portfolio/cursed rain.png" class="lightbox-img" alt="">
+      <img src="images/portfolio/cursed rain.png" class="lightbox-img" onclick="nextItem()" />
       <div class="lightbox-caption">
-        <div class="caption-text">Cursed Rain</div>
-        <div class="caption-counter">1 of 11</div>
+        <div class="caption-text"></div>
+        <div class="caption-counter"></div>
       </div>
     </div>
     <div class="lightbox-controls">
-      <div class="prev-item"><i class="fa fa-angle-left"></i></div>
-      <div class="next-item"><i class="fa fa-angle-right"></i></div>
+      <div class="prev-item" onclick="prevItem()">
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div class="next-item" onclick="nextItem()">
+        <i class="fa fa-angle-right"></i>
+      </div>
     </div>
   </div>
   <!--Lightbox End-->

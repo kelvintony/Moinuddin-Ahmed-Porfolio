@@ -620,8 +620,8 @@ section .container {
   cursor: pointer;
   position: relative;
 }
-.portfolio .portfolio-item-inner .portfolio-image {
-}
+/*.portfolio .portfolio-item-inner .portfolio-image {
+}*/
 .portfolio .portfolio-item-inner .portfolio-image img {
   width: 100%;
   display: block;
@@ -782,8 +782,8 @@ section .container {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.lightbox .lightbox-controls .prev-item:active,
-.lightbox .lightbox-controls .next-item:active {
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
