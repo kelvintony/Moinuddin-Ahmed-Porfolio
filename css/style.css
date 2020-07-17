@@ -548,8 +548,6 @@ section .container {
 /* #Portfolio */
 .portfolio .container {
   padding: 40px;
-  height: 600px;
-  width: 800px;
 }
 .portfolio .portfolio-filter h3 {
   color: #302e4d;
@@ -802,3 +800,40 @@ section .container {
   font-size: 40px;
   line-height: 50px;
 }
+
+/*blog*/
+.blog .botam a {
+  color: #fdf9ff;
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px 0px;
+  margin-left: 450px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    #ea1f4e,
+    #ffd166,
+    #05b384,
+    #118ab2,
+    #0a5770
+  );
+}
+.blog h2 {
+  color: #302e4d;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.blog p {
+  color: #504e70;
+  font-size: 18px;
+
+  margin-bottom: 50px;
+}
+
+/*#blog*/
