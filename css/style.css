@@ -581,6 +581,38 @@ section .container {
   max-width: 33.33%;
   margin-bottom: 20px;
 }
+.portfolio .portfolio-item.hide{
+  display: none;
+} 
+.portfolio .portfolio-item.show{
+  display: block;
+  animation: showItem 0.5s ease;
+}
+@-webkit-keyframes showItem{
+  0%{
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes showItem{
+  0%{
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .portfolio .portfolio-item-inner {
   border: 6px solid #fdf9ff;
   border-radius: 10px;
@@ -664,13 +696,16 @@ section .container {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
   cursor: zoom-out;
+}
+.lightbox.open {
+  display: -ms-flexbox;
+  display: flex;
 }
 .lightbox .lightbox-content img {
   height: auto;
@@ -678,19 +713,42 @@ section .container {
   max-height: 400px;
   max-width: 100%;
   cursor: pointer;
-  margin-top: 40px;
 }
+
 .lightbox .lightbox-content {
   position: relative;
+}
+.lightbox.open .lightbox-content {
+  animation: lightboxImage 0.5s ease;
+}
+@-webkit-keyframeskeyframes lightboxImage {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+@keyframes lightboxImage {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 .lightbox .lightbox-content .lightbox-close {
   position: absolute;
   width: 35px;
   height: 35px;
-  top: -165px;
+  top: -40px;
   right: 0px;
-  font-size: 20px;
-  background-color: rebeccapurple;
+  font-size: 40px;
   text-align: center;
   color: #ffffff;
   line-height: 40px;
@@ -708,4 +766,35 @@ section .container {
   color: #ffffff;
   font-weight: 400;
 }
-/*Lightbox End*/
+
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  z-index: 110;
+  margin-top: -20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.lightbox .lightbox-controls .prev-item {
+  left: 30px;
+}
+.lightbox .lightbox-controls .next-item {
+  right: 30px;
+}
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa {
+  font-size: 40px;
+  line-height: 50px;
+}

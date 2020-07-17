@@ -7,7 +7,8 @@
   border-right: 4px solid #eb1e4e;
   border-bottom: 4px solid #eb1e4e;
 }
-
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .about .about-content .about-text h3 span,
 .portfolio .portfolio-filter button.active,
