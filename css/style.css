@@ -550,7 +550,7 @@ section .container {
   padding: 40px;
 }
 .portfolio .portfolio-filter h3 {
-  color: #302e4d;
+  color: #504e70;
   margin-top: 30px;
   margin-bottom: 15px;
 }
@@ -827,7 +827,7 @@ section .container {
 .blog h2 {
   color: #302e4d;
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .blog p {
   color: #504e70;
