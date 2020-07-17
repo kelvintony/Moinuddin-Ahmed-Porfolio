@@ -277,7 +277,7 @@ section .container {
   display: inline-block;
   text-align: center;
   line-height: 35px;
-  color: #ffffff;
+  color: #fdf9ff;
   margin: 0 4px;
   border-radius: 50%;
   text-decoration: none;
@@ -614,6 +614,7 @@ section .container {
 }
 
 .portfolio .portfolio-item-inner {
+  margin-top: 15px;
   border: 6px solid #fdf9ff;
   border-radius: 10px;
   overflow: hidden;
@@ -710,9 +711,11 @@ section .container {
 .lightbox .lightbox-content img {
   height: auto;
   width: auto;
-  max-height: 400px;
+  max-height: 500px;
   max-width: 100%;
   cursor: pointer;
+  display: block;
+  padding: 40px 0 30px;
 }
 
 .lightbox .lightbox-content {
@@ -747,16 +750,16 @@ section .container {
   position: absolute;
   width: 35px;
   height: 35px;
-  top: -40px;
+  top: 0px;
   right: 0px;
   font-size: 40px;
   text-align: center;
-  color: #ffffff;
-  line-height: 40px;
+  color: #fdf9ff;
+  line-height: 35px;
 }
 .lightbox .lightbox-content .lightbox-caption {
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   display: -ms-flexbox;
@@ -764,7 +767,7 @@ section .container {
   -ms-flex-pack: space-between;
   justify-content: space-between;
   font-size: 16px;
-  color: #ffffff;
+  color: #fdf9ff;
   font-weight: 400;
 }
 
@@ -773,7 +776,7 @@ section .container {
   position: absolute;
   height: 50px;
   width: 50px;
-  background-color: #ffffff;
+  background-color: #fdf9ff;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;

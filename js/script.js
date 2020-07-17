@@ -77,7 +77,7 @@ function changeItem() {
 //close lightbox
 
 lightbox.addEventListener("click", function (event) {
-  if (event.target === lightboxClose) {
+  if (event.target === lightboxClose || event.target === lightbox) {
     toggleLightBox();
   }
 })
