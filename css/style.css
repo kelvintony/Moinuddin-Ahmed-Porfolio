@@ -227,6 +227,7 @@ section .container {
   z-index: 10;
   border-right: 1px solid #ffd166;
   padding: 30px;
+  overflow-y: auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
