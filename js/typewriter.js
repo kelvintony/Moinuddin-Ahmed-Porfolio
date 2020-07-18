@@ -2,7 +2,7 @@ const texts = [
   "I am Web/Game Developer.",
   "I am Creative.",
   "I Love Design.",
-  "I make 2D Vector Art.",
+  "I am Artist.",
   "I am Tech Enthusiast.",
   "I Love Learning New Skills.",
 ];
