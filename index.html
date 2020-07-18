@@ -8,6 +8,17 @@
   <!-- Template css Files -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/skins/pink.css" type="text/css" />
+  <!--Live Style Switcher(DEMO ONLY)-->
+  <link rel="stylesheet" class="alternate-style" title="blue-ncs" href="css/skins/blue ncs.css" type="text/css"
+    disabled />
+  <link rel="stylesheet" class="alternate-style" title="blue-saphire" href="css/skins/blue saphire.css" type="text/css"
+    disabled />
+  <link rel="stylesheet" class="alternate-style" title="mint" href="css/skins/mint.css" type="text/css" disabled />
+  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled />
+  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled />
+
+  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css" />
+  <!--Live Style Switcher(DEMO ONLY)-->
 </head>
 
 <body>
@@ -329,7 +340,7 @@
       </section>
       <!--About Section End-->
       <!--Service Section -->
-      <section class="service section ">
+      <section class="service section">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -406,7 +417,7 @@
       </section>
       <!--Service Section End-->
       <!--Portfolio Section -->
-      <section class="portfolio section ">
+      <section class="portfolio section">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -601,7 +612,7 @@
 
       <!--Portfolio Section End-->
       <!--Blog Section -->
-      <section class="blog section ">
+      <section class="blog section">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -724,9 +735,34 @@
   </div>
   <!--Lightbox End-->
 
+  <!--Live Style Switcher(DEMO ONLY)-->
+  <div class="style-switcher">
+    <h5>Style Switcher DEMO</h5>
+    <ul>
+      <li>
+        <a href="#" title="pink" style="background-color: #eb1e4e;" onclick="setActiveStyle('pink')"></a>
+      </li>
+
+      <li>
+        <a href="#" title="blue-ncs" style="background-color: #118ab2;" onclick="setActiveStyle('blue-ncs')"></a>
+      </li>
+      <li><a href="#" title="blue-saphire" style="background-color: #0a5770;"
+          onclick="setActiveStyle('blue-saphire')"></a>
+      </li>
+      <li><a href="#" title="yellow" style="background-color: #ffb60a;" onclick="setActiveStyle('yellow')"></a>
+      </li>
+      <li><a href="#" title="mint" style="background-color: #05b384;" onclick="setActiveStyle('mint')"></a>
+      </li>
+    </ul>
+  </div>
+  <!--#Live Style Switcher(DEMO ONLY)-->
   <!--template js-->
   <script src="js/script.js"></script>
   <!--template js end-->
+  <!--Live Style JS(DEMO ONLY)-->
+<script src="js/styleSwitcher.js"></script>
+  
+  <!--#Live Style JS(DEMO ONLY)-->
 </body>
 
 </html>

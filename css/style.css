@@ -399,7 +399,6 @@ section .container {
   line-height: 40px;
   position: absolute;
   right: 0;
-  color: #eb1e4e;
   top: -40px;
   font-weight: 400;
 }
@@ -821,7 +820,6 @@ section .container {
   letter-spacing: 1px;
   border-radius: 40px;
   overflow: hidden;
-  background: linear-gradient(75deg, #ea1f4e, #ffd166, #05b384);
 }
 .blog h2 {
   color: #302e4d;
@@ -918,12 +916,13 @@ section .container {
 /*#Contact*/
 /*Responsive*/
 @media (max-width: 1199px) {
-  .aside {
+  /* .aside {
     left: -270px;
   }
   .main-content {
     padding-left: 0;
-  }
+  }*/
+
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
@@ -939,6 +938,7 @@ section .container {
   }
 }
 @media (max-width: 767px) {
+  .contact .contact-form .col-6,
   .about .about-content .education,
   .about .about-content .skills,
   .about .about-content .exp,
@@ -953,6 +953,7 @@ section .container {
 }
 
 @media (max-width: 575px) {
+  .contact .contact-info-item,
   .portfolio .portfolio-item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
