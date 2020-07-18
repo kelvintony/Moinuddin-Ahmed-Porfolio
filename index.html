@@ -1,64 +1,802 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Moinuddin Ahmed | Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Template css Files -->
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/skins/pink.css" type="text/css" />
-  </head>
 
-  <body>
-    <!--main container-->
-    <div class="main-container">
-      <!--Aside-->
-      <div class="aside">
-        <!--Logo-->
-        <div class="logo">
-          <a href="#">Welcome</a>
-        </div>
-        <!--Nav Toggler button-->
-        <div class="nav-toggler">
-          <span></span>
-        </div>
-        <!--Nav-->
-        <ul class="nav">
-          <li>
-            <a href="#" class="active"><i class="fa fa-home"></i> Home</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-user"></i> About</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-list"></i> Service</a>
-          </li>
+<head>
+  <title>Moinuddin Ahmed | Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Template css Files -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/skins/ruby red.css" type="text/css" />
+  <!--Live Style Switcher(DEMO ONLY)-->
+  <link rel="stylesheet" class="alternate-style" title="blue-ncs" href="css/skins/blue ncs.css" type="text/css"
+    disabled />
+  <link rel="stylesheet" class="alternate-style" title="blue-saphire" href="css/skins/blue saphire.css" type="text/css"
+    disabled />
+  <link rel="stylesheet" class="alternate-style" title="mint" href="css/skins/mint.css" type="text/css" disabled />
+  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled />
+  <link rel="stylesheet" class="alternate-style" title="ruby-red" href="css/skins/ruby red.css" type="text/css"
+    disabled />
 
-          <li>
-            <a href="#"><i class="fa fa-briefcase"></i> Portfolio</a>
-          </li>
+  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css" />
+  <!--Live Style Switcher(DEMO ONLY)-->
+</head>
 
-          <li>
-            <a href="#"><i class="fa fa-envelope"></i> Blog</a>
-          </li>
+<body>
+  <!--Preloader-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
 
-          <li>
-            <a href="#"><i class="fa fa-comments"></i> Contact</a>
-          </li>
-        </ul>
-        <!--Copyright-->
-        <div class="copyright-text">
-          &copy; 2020 Moinuddin Ahmed
-        </div>
+  <!--#Preloader-->
+  <!--main container-->
+  <div class="main-container">
+    <!--Aside-->
+    <div class="aside">
+      <!--Logo-->
+      <div class="logo">
+        <a href="#">MA</a>
       </div>
-      <!--Aside End-->
-      <!--Main Content-->
-      <div class="main-content">
-        <section class="home section"></section>
+      <!--Nav Toggler button-->
+      <div class="nav-toggler">
+        <span></span>
       </div>
-      <!--Main Content End-->
+      <!--Nav-->
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#services"><i class="fa fa-list"></i> Service</a>
+        </li>
+
+        <li>
+          <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+        </li>
+
+        <li>
+          <a href="#blog"><i class="fa fa-envelope"></i> Blog</a>
+        </li>
+
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        </li>
+      </ul>
+      <!--Copyright-->
+      <div class="copyright-text">
+        &copy; 2020 Moinuddin Ahmed
+      </div>
     </div>
+    <!--Aside End-->
+    <!--Main Content-->
+    <div class="main-content">
+      <!--Home Section-->
 
-    <!--main container-->
-  </body>
+      <section class="home section active" id="home">
+        <div class="container">
+          <div class="intro">
+            <img src="images/mypic.jpg" alt="profile" class="shadow-dark" />
+            <h1>Moinuddin Ahmed</h1>
+            <p class="typing"></p>
+            <div class="social-links">
+              <a href="http://www.youtube.com/c/KalponicGames" target="_blank"><i class="fa fa-youtube-play"></i>
+              </a>
+
+              <a href="https://twitter.com/KalponicGames " target="_blank"><i class="fa fa-twitter"></i></a>
+
+              <a href="https://github.com/jony100200" target="_blank"><i class="fa fa-github"></i></a>
+
+              <a href="https://www.linkedin.com/in/moinuddinahmedjony/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a>
+              <!--<a href="https://kalponic-games.itch.io/" target="_blank"><img src="images\icons/i.png" /></a>-->
+            </div>
+          </div>
+          <script src="js/typewriter.js"></script>
+        </div>
+      </section>
+      <!--Home Section End-->
+      <!--About Section -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>
+                    I Am Moinuddin Ahmed: <span>A Web/Game Developer</span>
+                  </h3>
+                  <p>
+                    I'm Moinuddin Ahmed(Jony) from Ottawa,Canada: A
+                    self-taught web/game developer. I am also a 2D vector
+                    artist.Some of my hobbies are story
+                    writing,reading,travelling and gaming among many others.
+                  </p>
+                  <p>
+                    Over the years I have gained variety of skills necesssary
+                    to make your project a success. I enjoy every step of the
+                    design process, from discussion to collaboration.I hope to
+                    work with you.
+                  </p>
+                </div>
+              </div>
+              <!--This section is to add personal info-->
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <h3>Personal Info</h3>
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>
+                        Diploma :
+                        <span>Electrical Engineering Technician</span>
+                      </p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>+1-613-700-0401</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City : <span>Ottawa,ON,Canada</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>jony100200@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance : <span>Available</span></p>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <a href="https://tinyurl.com/yyz7p96e" target="_blank" class="btn">Download Resume</a>
+                    <a href="#contact" data-section-index="1" class="btn contact-me">Contact Me</a>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <h3>Skills</h3>
+                  <div class="row">
+                    <!--Start of one skill %-->
+                    <div class="skill-item padd-15">
+                      <h4>C#</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 75%;"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                    <!--End of one skill %-->
+                    <div class="skill-item padd-15">
+                      <h4>HTML5</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%;"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h4>CSS3</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h4>Javscript</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 60%;"></div>
+                        <div class="skill-percent">60%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h4>Bootstrap</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 75%;"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h4>Adobe Illustrator</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h4>Unity</h4>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education & Certificates</h3>
+
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!--Timeline Item-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2020
+                          </h6>
+                          <h4 class="timeline-title">
+                            Certificate in Complete C# Unity Game Developer 2D
+                          </h4>
+                          <p class="timeline-text">
+                            Udemy Online course by GameDev.tv where they teach
+                            C# to make 2D games with unity game engine
+                          </p>
+                        </div>
+                        <!--#Timeline Item-->
+                        <!--Timeline Item-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2020
+                          </h6>
+                          <h4 class="timeline-title">
+                            Certificate in Photoshop and Illustrator Speed
+                            Workflow
+                          </h4>
+                          <p class="timeline-text">
+                            Udemy Online course by Expose Academy where I
+                            learnt fast workflow of photoshop and illustrator
+                            to produce quality game assets and graphic design
+                            materials
+                          </p>
+                        </div>
+                        <!--#Timeline Item-->
+                        <!--Timeline Item-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2010-2013
+                          </h6>
+                          <h4 class="timeline-title">
+                            Diploma in Electrical Engineering Technician
+                          </h4>
+                          <p class="timeline-text">
+                            Earned Technician Dimploma at Algonquin College,
+                            Ottawa, ON
+                          </p>
+                        </div>
+                        <!--#Timeline Item-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="exp padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!--Timeline Item-->
+                        <div class="timeline-item">
+                          <a href="https://kalponic-games.itch.io/" target="_blank"></a>
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2014-Present
+                          </h6>
+                          <h4 class="timeline-title">
+                            Technical Artist <br />
+                            Kalponic Games
+                          </h4>
+                          <p class="timeline-text">
+                            Formed this group to make small 2D games and do
+                            game jams <br />
+                            Direct the formed team to submit games before
+                            deadline <br />
+                            Co-operate with other team members to solve
+                            probelms if any
+                          </p>
+                        </div>
+
+                        <!--#Timeline Item-->
+                        <!--Timeline Item-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2019
+                          </h6>
+                          <h4 class="timeline-title">
+                            Machine Operator <br />Ottawa Mould Craft Ltd.
+                          </h4>
+                          <p class="timeline-text">
+                            Ensure that product quality meet customer
+                            specifications<br />
+                            Inspect manufactured good for any errors and
+                            report them to supervisor or person in charge<br />
+                            If there are any problems troubleshoot and resolve
+                            them<br />
+                          </p>
+                        </div>
+                        <!--#Timeline Item-->
+                        <!--Timeline Item-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2016-2017
+                          </h6>
+                          <h4 class="timeline-title">
+                            Fiber Alignment Operator <br />
+                            Sanmina Corporation
+                          </h4>
+                          <p class="timeline-text">
+                            Handle fiber for ribbon breakouts, device routing,
+                            component assemblies and related tasks <br />
+                            Report and resolve quality issues to management
+                            and relevant departments as needed
+                          </p>
+                        </div>
+                        <!--#Timeline Item-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About Section End-->
+      <!--Service Section -->
+      <section class="service section" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!--Service Item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon"><i class="fa fa-laptop"></i></div>
+                <h4>Web Development & Design</h4>
+                <p>I will develop and design websites for you</p>
+              </div>
+            </div>
+            <!--#Service Item-->
+            <!--Service Item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon"><i class="fa fa-gamepad"></i></div>
+                <h4>Game Development & Design</h4>
+                <p>
+                  I will develop and design 2D games for you using Unity game
+                  Engine
+                </p>
+              </div>
+            </div>
+            <!--#Service Item-->
+            <!--Service Item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon"><i class="fa fa-book"></i></div>
+                <h4>Story Writing</h4>
+                <p>
+                  I will write story/dialogues for your games/other content
+                </p>
+              </div>
+            </div>
+            <!--#Service Item-->
+            <!--Service Item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                <h4>Graphic Design</h4>
+                <p>I will design logos,stickers and banner for you</p>
+              </div>
+            </div>
+            <!--#Service Item-->
+            <!--Service Item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon"><i class="fa fa-laptop"></i></div>
+                <h4>Game Asset Creation</h4>
+                <p>
+                  I will make 2D vector game art assets with Adobe Illustrator
+                </p>
+              </div>
+            </div>
+            <!--#Service Item-->
+            <!--Service Item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon"><i class="fa fa-commenting"></i></div>
+                <h4>Game Testing</h4>
+                <p>
+                  I will play, test, prodive feedbaks and report bugs for your
+                  game
+                </p>
+              </div>
+            </div>
+            <!--#Service Item-->
+          </div>
+        </div>
+      </section>
+      <!--Service Section End-->
+      <!--Portfolio Section -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-filter padd-15">
+              <h3>Below you will find some of my recent work</h3>
+              <button type="button" class="active" data-filter="all">
+                All
+              </button>
+              <button type="button" data-filter="unity-games">
+                Unity Games
+              </button>
+              <button type="button" data-filter="Artwork">
+                Artwork
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="unity-games">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/cursed rain.png" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Cursed Rain</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="unity-games">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/work2.png" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Breaking Time!</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="unity-games">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/defender bir.png" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Defender Bir</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="unity-games">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/rolling turtle.png" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Rolling Turtle</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/character1.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Character 1</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/character2.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Character 2</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/character3.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Character 3</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/character4.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Character 4</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/bg1.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Game Background 1</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/game asset 1.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Game Asset 1</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+            <!--portfolio-item-->
+            <div class="portfolio-item padd-15" data-category="Artwork">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-image">
+                  <img src="images/portfolio/game asset 2.jpg" alt="portfolio" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Game Asset 2</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--portfolio-item end-->
+          </div>
+          <!--button link to itch.io-->
+          <div class="row">
+            <div class="buttons padd-15">
+              <a href="https://kalponic-games.itch.io/" target="_blank" class="btn">Check My Games</a>
+              <a href="https://www.artstation.com/jonybir" target="_blank" class="btn">Check My Artwork</a>
+            </div>
+          </div>
+          <!--button link to itch.io-->
+        </div>
+      </section>
+
+      <!--Portfolio Section End-->
+      <!--Blog Section -->
+      <section class="blog section" id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Latest Blog</h2>
+              <p>
+                I love to write and record my progress in my blog. You can
+                follow the link below to find out more.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="blog-item padd-15">
+              <div class="row">
+                <div class="botam">
+                  <a href="https://kalponicblog.wordpress.com/" target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Blog Section End-->
+      <!--Contact Section -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!--contact-info-item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-mobile fa-3x"></i></div>
+              <h4>Mobile</h4>
+              <p>+1-613-700-0401</p>
+            </div>
+            <!--contact-info-item-end-->
+
+            <!--contact-info-item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>jony100200@gmail.com</p>
+            </div>
+            <!--contact-info-item-end-->
+          </div>
+          <!--Contact Form-->
+          <div class="row">
+            <form class="contact-form padd-15">
+              <div class="row">
+                <!--Form Item-->
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name*" />
+                  </div>
+                </div>
+                <!--#Form Item-->
+                <!--Form Item-->
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email*" />
+                  </div>
+                </div>
+                <!--#Form Item-->
+                <!--Form Item-->
+              </div>
+              <div class="row">
+                <!--Form Item-->
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject*" />
+                  </div>
+                </div>
+                <!--#Form Item-->
+              </div>
+              <div class="row">
+                <!--Form Item-->
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Your message..."></textarea>
+                  </div>
+                </div>
+                <!--#Form Item-->
+              </div>
+              <div class="row">
+                <div class="col-12 padd-15">
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--Contact Form End-->
+        </div>
+      </section>
+      <!--Contact Section End-->
+    </div>
+    <!--Main Content End-->
+  </div>
+
+  <!--main container-->
+  <!--Lightbox-->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <div class="lightbox-close">&times;</div>
+      <img src="images/portfolio/cursed rain.png" class="lightbox-img" onclick="nextItem()" />
+      <div class="lightbox-caption">
+        <div class="caption-text"></div>
+        <div class="caption-counter"></div>
+      </div>
+    </div>
+    <div class="lightbox-controls">
+      <div class="prev-item" onclick="prevItem()">
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div class="next-item" onclick="nextItem()">
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+  <!--Lightbox End-->
+
+  <!--Live Style Switcher(DEMO ONLY)-->
+  <div class="style-switcher">
+    <div class="toggle-style-swticher">
+      <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <h5>Style Switcher DEMO</h5>
+    <ul>
+      <li>
+        <a href="javascript:void(0)" title="ruby-red" style="background-color: #9a031e;"
+          onclick="setActiveStyle('ruby-red')"></a>
+      </li>
+
+      <li>
+        <a href="javascript:void(0)" title="blue-ncs" style="background-color: #118ab2;"
+          onclick="setActiveStyle('blue-ncs')"></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" title="blue-saphire" style="background-color: #0a5770;"
+          onclick="setActiveStyle('blue-saphire')"></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" title="yellow" style="background-color: #ffb60a;"
+          onclick="setActiveStyle('yellow')"></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" title="mint" style="background-color: #05b384;"
+          onclick="setActiveStyle('mint')"></a>
+      </li>
+    </ul>
+    <h5>Body Skin</h5>
+    <label>
+      <input type="radio" class="body-skin" name="body-style" value="light" checked="true" />
+      Light
+    </label>
+    <label>
+      <input type="radio" class="body-skin" name="body-style" value="dark" />
+      Dark
+    </label>
+  </div>
+  <!--#Live Style Switcher(DEMO ONLY)-->
+  <!--template js-->
+  <script src="js/script.js"></script>
+  <!--template js end-->
+  <!--Live Style JS(DEMO ONLY)-->
+  <script src="js/styleSwitcher.js"></script>
+
+  <!--#Live Style JS(DEMO ONLY)-->
+</body>
+
 </html>
