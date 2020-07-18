@@ -1,11 +1,11 @@
 .aside .logo a::before {
-  border-top: 4px solid #eb1e4e;
-  border-left: 4px solid #eb1e4e;
+  border-top: 4px solid #9a031e;
+  border-left: 4px solid #9a031e;
 }
 
 .aside .logo a::after {
-  border-right: 4px solid #eb1e4e;
-  border-bottom: 4px solid #eb1e4e;
+  border-right: 4px solid #9a031e;
+  border-bottom: 4px solid #9a031e;
 }
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
@@ -19,7 +19,7 @@ body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active {
-  color: #eb1e4e;
+  color: #9a031e;
 }
 
 .about .about-content .skills .skill-item .progress .progress-in,
@@ -32,19 +32,19 @@ body.dark .aside .nav li a.active,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
 .home .intro .social-links a {
-  background-color: #eb1e4e;
+  background-color: #e76f51;
 }
 
 .portfolio .portfolio-filter button.active {
-  border-color: #eb1e4e;
+  border-color: #e76f51;
 }
 
 .about .about-content .skills .skill-item .skill-percent {
-  color: #eb1e4e;
+  color: #e76f51;
 }
 
 .btn,
 .blog .botam a,
 .contact .contact-form .btn {
-  background: linear-gradient(90deg, #eb1e4e, #ffd166);
+  background: linear-gradient(90deg, #9a031e, #e76f51);
 }

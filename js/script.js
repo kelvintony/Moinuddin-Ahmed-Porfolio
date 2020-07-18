@@ -1,3 +1,10 @@
+window.addEventListener("load", function () {
+  document.querySelector(".preloader").classList.add("opacity-0");
+  setTimeout(function () {
+    document.querySelector(".preloader").style.display = "none";
+  }, 1000);
+});
+
 // Portfolio item filter
 
 const filterContainer = document.querySelector(".portfolio-filter"),
@@ -42,7 +49,7 @@ for (let i = 0; i < totalPortfolioItem; i++) {
     itemIndex = i;
     changeItem();
     toggleLightBox();
-  })
+  });
 }
 //go next item
 function nextItem() {
@@ -62,16 +69,20 @@ function prevItem() {
   }
   changeItem();
 }
-//toggle close/open the image 
+//toggle close/open the image
 function toggleLightBox() {
   lightbox.classList.toggle("open");
 }
 
 function changeItem() {
-  imgSrc = portfolioItems[itemIndex].querySelector(".portfolio-image img").getAttribute("src");
+  imgSrc = portfolioItems[itemIndex]
+    .querySelector(".portfolio-image img")
+    .getAttribute("src");
   lightboxImg.src = imgSrc;
-  lightboxText.innerHTML = portfolioItems[itemIndex].querySelector("h4").innerHTML;
-  lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalPortfolioItem;
+  lightboxText.innerHTML = portfolioItems[itemIndex].querySelector(
+    "h4"
+  ).innerHTML;
+  lightboxCounter.innerHTML = itemIndex + 1 + " of " + totalPortfolioItem;
 }
 
 //close lightbox
@@ -80,7 +91,7 @@ lightbox.addEventListener("click", function (event) {
   if (event.target === lightboxClose || event.target === lightbox) {
     toggleLightBox();
   }
-})
+});
 
 //Aside Navbar
 
@@ -93,11 +104,14 @@ const nav = document.querySelector(".nav"),
 for (let i = 0; i < totalNavList; i++) {
   const a = navList[i].querySelector("a");
   a.addEventListener("click", function () {
-
     //remove back section class
+    for (let i = 0; i < totalSection; i++) {
+      allSection[i].classList.remove("back-section");
+    }
 
     for (let j = 0; j < totalNavList; j++) {
       if (navList[j].querySelector("a").classList.contains("active")) {
+        //add back section class
         allSection[j].classList.add("back-section");
       }
       navList[j].querySelector("a").classList.remove("active");
@@ -106,22 +120,37 @@ for (let i = 0; i < totalNavList; i++) {
     this.classList.add("active");
 
     showSection(this);
-  })
+    if (window.innerWidth < 1200) {
+      asideSectionTogglerBtn();
+    }
+  });
 }
 
-
 function showSection(element) {
+  //remove active from all section
   for (let i = 0; i < totalSection; i++) {
     allSection[i].classList.remove("active");
   }
   const target = element.getAttribute("href").split("#")[1];
 
   document.querySelector("#" + target).classList.add("active");
-
 }
 
 
+document.querySelector(".contact-me").addEventListener("click", function () {
+  showSection(this)
+})
 
+const navTogglerBtn = document.querySelector(".nav-toggler"),
+  aside = document.querySelector(".aside");
 
+navTogglerBtn.addEventListener("click", asideSectionTogglerBtn);
 
+function asideSectionTogglerBtn() {
+  aside.classList.toggle("open");
+  navTogglerBtn.classList.toggle("open");
 
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.toggle("open");
+  }
+}

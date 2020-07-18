@@ -45,8 +45,10 @@ select {
   bottom: 0;
   z-index: 0;
   opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.section .back-section {
+.section.back-section {
   z-index: 1;
 }
 .section.active {
@@ -160,6 +162,60 @@ section .container {
 .hidden {
   display: none !important;
 }
+
+/*Prealoader*/
+.preloader {
+  background-color: #222222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 150;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.preloader.opacity-0 {
+  opacity: 0;
+}
+.preloader .loader {
+  height: 40px;
+  width: 40px;
+  border: 4px solid #e3e3e3;
+  border-radius: 50%;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*#Prealoader*/
 /* Aside */
 .aside {
   width: 270px;
@@ -171,6 +227,8 @@ section .container {
   z-index: 10;
   border-right: 1px solid #ffd166;
   padding: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .aside .logo {
   padding: 10px 0;
@@ -216,22 +274,28 @@ section .container {
   cursor: pointer;
   position: fixed;
   left: 300px;
-  top: 30px;
+  top: 20px;
   z-index: 11;
   border-radius: 5px;
   background-color: #fdf9ff;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: -ms-flexbox;
+  display: flex;*/
+  display: none;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .aside .nav-toggler span {
   height: 2px;
   width: 18px;
   display: inline-block;
   position: relative;
+}
+.aside .nav-toggler.open span {
+  background-color: transparent;
 }
 
 .aside .nav-toggler span::before {
@@ -242,6 +306,12 @@ section .container {
   top: -6px;
   left: 0;
 }
+.aside .nav-toggler.open span::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+}
+
 .aside .nav-toggler span::after {
   content: "";
   height: 2px;
@@ -249,6 +319,11 @@ section .container {
   position: absolute;
   top: 6px;
   left: 0;
+}
+.aside .nav-toggler.open span::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0px;
 }
 .aside .nav {
   list-style: none;
@@ -625,6 +700,16 @@ section .container {
   max-width: 33.33%;
   margin-bottom: 20px;
 }
+.portfolio .container .buttons {
+  margin-top: 40px;
+  align-items: center;
+  margin-left: 250px;
+}
+.portfolio .container .buttons .btn {
+  align-items: center;
+  margin-left: 50px;
+}
+
 .portfolio .portfolio-item.hide {
   display: none;
 }
@@ -965,6 +1050,7 @@ body.dark .contact .contact-form .form-item .form-control,
 body.dark .aside {
   background-color: #222222;
 }
+body.dark .about .about-content .personal-info .info-item p,
 body.dark .contact .contact-info-item h4,
 body.dark .portfolio .portfolio-filter button,
 body.dark .service .service-item .service-item-inner h4,
@@ -998,7 +1084,6 @@ body.dark .contact .contact-form .form-item .form-control,
 body.dark .service .service-item .service-item-inner,
 body.dark .about .about-content .timeline,
 body.dark .portfolio .portfolio-item-inner,
-body.dark .about .about-content .personal-info .info-item p,
 body.dark .aside .nav li a {
   border-color: #393939;
 }
@@ -1012,13 +1097,30 @@ body.dark .shadow-dark {
 
 /*Responsive*/
 @media (max-width: 1199px) {
-  /* .aside {
+  .section .container {
+    padding-top: 70px;
+  }
+  .aside .nav-toggler {
+    display: -ms-flexbox;
+    display: flex;
+    left: 30px;
+  }
+  .aside .nav-toggler.open {
+    left: 300px;
+  }
+  .aside {
     left: -270px;
   }
-  .main-content {
-    padding-left: 0;
-  }*/
+  .aside.open {
+    left: 0;
+  }
+  .section {
+    left: 0;
+  }
 
+  .section.open {
+    left: 270;
+  }
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
