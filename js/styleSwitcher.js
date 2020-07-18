@@ -6,10 +6,12 @@ const links = document.querySelectorAll(".alternate-style"),
 function setActiveStyle(color) {
     for (let i = 0; i < totalLinks; i++) {
         if (color == links[i].getAttribute("title")) {
-            links[i].removeAttribute("disabled");
-            
+            //links[i].removeAttribute("disabled");
+            links[i].disabled = false;
+
         } else {
-            links[i].setAttribute("disabled");
+            //links[i].setAttribute("disabled");
+            links[i].disabled = true;
             console.log("disabled")
         }
     }
