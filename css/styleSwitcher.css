@@ -4,8 +4,18 @@
   right: 0;
   z-index: 10;
   padding: 15px;
+  background-color: #daf3fc;
   border: 1px solid #d4d4e3;
   border-right: none;
+  border-radius: 0 0 0 6px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.style-switcher.open {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .style-switcher h5 {
@@ -20,6 +30,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .style-switcher ul li {
@@ -34,4 +46,23 @@
   cursor: pointer;
   text-decoration: none;
   margin-right: 2px;
+}
+
+.style-switcher .toggle-style-swticher {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: -45px;
+  top: -1px;
+  background-color: #daf3fc;
+  text-align: center;
+  border: 1px solid #d4d4e3;
+  border-right: none;
+  cursor: pointer;
+  border-radius: 0 0 0 6px;
+}
+
+.style-switcher .toggle-style-swticher .fa {
+  font-size: 20px;
+  line-height: 45px;
 }

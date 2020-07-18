@@ -12,8 +12,11 @@
 .contact .contact-info-item .icon .fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .about .about-content .about-text h3 span,
+body.dark .portfolio .portfolio-filter button.active,
 .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active {
   color: #0a5770;
